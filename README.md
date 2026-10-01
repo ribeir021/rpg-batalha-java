@@ -20,13 +20,10 @@ Certifique-se de ter o [Java JDK](https://www.oracle.com/java/technologies/downl
 git clone [https://github.com/SEU-USUARIO/rpg-batalha-java.git](https://github.com/SEU-USUARIO/rpg-batalha-java.git)
 
 2. Navegue até a pasta do projeto:
-```bash
 cd rpg-batalha-java
 
 3. Compile os ficheiros Java:
-```bash
 javac Main.java Heroi.java Monstro.java Personagem.java
 
 4. Execute o jogo:
-```bash
 java Main
