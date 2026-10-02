@@ -4,6 +4,7 @@ public class Personagem {
     protected int vida;
     protected int forca;
     protected int defesa;
+    protected int qtdPocoes;
 
     // Eu crio o construtor principal para inicializar os atributos da classe molde
     public Personagem (String nome, int vida, int forca, int defesa) {
@@ -11,6 +12,7 @@ public class Personagem {
         this.vida = vida;
         this.forca = forca;
         this.defesa = defesa;
+        this.qtdPocoes = 3;
     }
     
     // Eu defino a mecânica de ataque base transferindo o cálculo de dano para o alvo
@@ -27,5 +29,11 @@ public class Personagem {
         }
         this.vida -= dano;
         System.out.println(this.nome + " recebeu " + dano + " de dano! Vida restante: " + this.vida);
+    }
+
+    public void receberCura(int cura){
+        this.qtdPocoes -= 1;
+        this.vida += cura;
+        System.out.println(this.nome + " recuperou " + cura + " pontos de vida! Vida restante:" + this.vida);
     }
 }
